@@ -1,3 +1,4 @@
+# create measurement_id for measurement names used in run_analysis.R
 
 idbodyaccx <- c("body_acc_x_", "body_acc_x_","body_acc_x_", "body_acc_x_", "body_acc_x_", "body_acc_x_","body_acc_x_", "body_acc_x_",
 "body_acc_x_", "body_acc_x_","body_acc_x_", "body_acc_x_", "body_acc_x_", "body_acc_x_","body_acc_x_", "body_acc_x_",
