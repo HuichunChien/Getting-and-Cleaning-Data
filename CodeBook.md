@@ -1,6 +1,6 @@
 ## Code Book
 
-This code book will describe the data used in this project, as well as the processing required to create the resulting tidy data set.
+This code book will describe the data, varialbes used in this project, as well as the processing performed to create the resulting tidy data set.
 
 ### Overview
 
@@ -9,7 +9,7 @@ This code book will describe the data used in this project, as well as the proce
 ### Explanation of each file
 
 * `features.txt`: Names of the 561 features.
-* `activity_labels.txt`: Names and IDs for each of the 6 activities.
+* `train_y`: IDs for each of the 6 activities, 1:6, for training data. The mapped names are WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING. 
 
 * `X_train.txt`: 7352 observations of the 561 features, for 21 of the 30 volunteers.
 * `subject_train.txt`: A vector of 7352 integers, denoting the ID of the volunteer related to each of the observations in `X_train.txt`.
