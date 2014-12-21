@@ -6,18 +6,30 @@ This code book will describe the data, varialbes used in this project, as well a
 
 30 volunteers performed 6 different activities while wearing a smartphone. The smartphone captured various data about their movements.
 
-### Explanation of each file
+### Explanation of each variables
 
-* `features.txt`: Names of the 561 features.
-* `train_y`: IDs for each of the 6 activities, 1:6, for training data. The mapped names are WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING. 
+* `features`: Names of the 561 features.
 
-* `X_train.txt`: 7352 observations of the 561 features, for 21 of the 30 volunteers.
-* `subject_train.txt`: A vector of 7352 integers, denoting the ID of the volunteer related to each of the observations in `X_train.txt`.
-* `y_train.txt`: A vector of 7352 integers, denoting the ID of the activity related to each of the observations in `X_train.txt`.
+* `train_y`: IDs for each of the 6 activities, 1:6, for training dataset. The mapped names are WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING. 
+* `train_subject`: IDs of 30 volunteers performed 6 different activities in training dataset.
+* `train_x`: The observations of measurements on 561 features, which are performed by 30 volunteers, in training dataset. 
 
-* `X_test.txt`: 2947 observations of the 561 features, for 9 of the 30 volunteers.
-* `subject_test.txt`: A vector of 2947 integers, denoting the ID of the volunteer related to each of the observations in `X_test.txt`.
-* `y_test.txt`: A vector of 2947 integers, denoting the ID of the activity related to each of the observations in `X_test.txt`.
+* `test_y`: IDs for each of the 6 activities, 1:6, for test dataset. The mapped names are WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING. 
+* `test_subject`: IDs of 30 volunteers performed 6 different activities in test dataset.
+* `test_x`: The observations of measurements on 561 features, which are performed by 30 volunteers, in test dataset. 
+
+* `totdata`: Mergeed dataset of the training and the test sets, which is required in part 1 of project.
+
+* `Means`: Measurements on the mean for each measurement, which is required in part 1 of project.
+* `Stds`: Measurements on the standard deviation for each measurement, which is required in part 1 of project. 
+* `Means_Stds`: Dataset combined from `Means` and `Stds`.
+
+* `activity_idnames`: The descriptive activity names required in part 3 of project.
+
+
+* `features_names`: The descriptive variable names required in part 4 of project.
+
+* `tidydata`: tidy data required in final part of this project. 
 
 More information about the files is available in `README.txt`. More information about the features is available in `features_info.txt`.
 
