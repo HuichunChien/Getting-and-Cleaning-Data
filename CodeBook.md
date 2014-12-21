@@ -41,7 +41,7 @@ This analysis was performed using only the files above, and did not use the raw 
 
 1. All of the relevant data files were read into data frames, appropriate column headers were added, and the training and test sets were combined into a single data set called `totdata`.
 
-2. Remove the parentheses in columns related to mean and standard deviation. Extract columns which are "mean" or "std". This left (53+33)=86 feature columns, plus the subjectID and activity columns.
+2. Remove the parentheses in columns related to mean and standard deviation. Extract columns which are "mean" or "std". This left (53+33)=86 feature columns.
 
 3. Convert activities from a integer to a factor, using labels describing the activities.
 
