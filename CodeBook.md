@@ -19,13 +19,13 @@ This code book will describe the data, varialbes used in this project, as well a
 * `test_x`: The observations of measurements on 561 features, which are performed by 30 volunteers, in test dataset. 
 
 * `totdata`: Mergeed dataset of the training and the test sets, which is required in part 1 of project.
+* `measurement_id`: The organized IDs for 9 types of measurments related to body, gyro and total, which is creaded by customed file named `measurement_id.R`.
 
-* `Means`: Measurements on the mean for each measurement, which is required in part 1 of project.
-* `Stds`: Measurements on the standard deviation for each measurement, which is required in part 1 of project. 
+* `Means`: Measurements on the mean for each measurement, which is required in part 2 of project.
+* `Stds`: Measurements on the standard deviation for each measurement, which is required in part 2 of project. 
 * `Means_Stds`: Dataset combined from `Means` and `Stds`.
 
 * `activity_idnames`: The descriptive activity names required in part 3 of project.
-
 
 * `features_names`: The descriptive variable names required in part 4 of project.
 
@@ -39,8 +39,12 @@ This analysis was performed using only the files above, and did not use the raw 
 
 ### Processing steps
 
-1. All of the relevant data files were read into data frames, appropriate column headers were added, and the training and test sets were combined into a single data set.
-2. All feature columns were removed that did not contain the exact string "mean()" or "std()". This left 66 feature columns, plus the subjectID and activity columns.
-3. The activity column was converted from a integer to a factor, using labels describing the activities.
-4. A tidy data set was created containing the mean of each feature for each subject and each activity. Thus, subject #1 has 6 rows in the tidy data set (one row for each activity), and each row contains the mean value for each of the 66 features for that subject/activity combination. Since there are 30 subjects, there are a total of 180 rows.
-5. The tidy data set was output to a txt file.
+1. All of the relevant data files were read into data frames, appropriate column headers were added, and the training and test sets were combined into a single data set called `totdata`.
+
+2. Remove the parentheses in columns related to mean and standard deviation. Extract columns which are "mean" or "std". This left (53+33)=86 feature columns, plus the subjectID and activity columns.
+
+3. Convert activities from a integer to a factor, using labels describing the activities.
+
+4. Reforme the names of dataset retrieved in part 3, and name these names descriptively.
+
+5. Get tidy data, and export it to a txt file.
