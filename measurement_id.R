@@ -1,4 +1,5 @@
-idbaccx <- c("body_acc_x_", "body_acc_x_","body_acc_x_", "body_acc_x_", "body_acc_x_", "body_acc_x_","body_acc_x_", "body_acc_x_",
+
+idbodyaccx <- c("body_acc_x_", "body_acc_x_","body_acc_x_", "body_acc_x_", "body_acc_x_", "body_acc_x_","body_acc_x_", "body_acc_x_",
 "body_acc_x_", "body_acc_x_","body_acc_x_", "body_acc_x_", "body_acc_x_", "body_acc_x_","body_acc_x_", "body_acc_x_",
 "body_acc_x_", "body_acc_x_","body_acc_x_", "body_acc_x_", "body_acc_x_", "body_acc_x_","body_acc_x_", "body_acc_x_",
 "body_acc_x_", "body_acc_x_","body_acc_x_", "body_acc_x_", "body_acc_x_", "body_acc_x_","body_acc_x_", "body_acc_x_",
@@ -15,7 +16,7 @@ idbaccx <- c("body_acc_x_", "body_acc_x_","body_acc_x_", "body_acc_x_", "body_ac
 "body_acc_x_", "body_acc_x_","body_acc_x_", "body_acc_x_", "body_acc_x_", "body_acc_x_","body_acc_x_", "body_acc_x_",
 "body_acc_x_", "body_acc_x_","body_acc_x_", "body_acc_x_", "body_acc_x_", "body_acc_x_","body_acc_x_", "body_acc_x_")
 
-idbaccy <- c("body_acc_y_", "body_acc_y_","body_acc_y_", "body_acc_y_", "body_acc_y_", "body_acc_y_","body_acc_y_", "body_acc_y_",
+idbodyaccy <- c("body_acc_y_", "body_acc_y_","body_acc_y_", "body_acc_y_", "body_acc_y_", "body_acc_y_","body_acc_y_", "body_acc_y_",
              "body_acc_y_", "body_acc_y_","body_acc_y_", "body_acc_y_", "body_acc_y_", "body_acc_y_","body_acc_y_", "body_acc_y_",
              "body_acc_y_", "body_acc_y_","body_acc_y_", "body_acc_y_", "body_acc_y_", "body_acc_y_","body_acc_y_", "body_acc_y_",
              "body_acc_y_", "body_acc_y_","body_acc_y_", "body_acc_y_", "body_acc_y_", "body_acc_y_","body_acc_y_", "body_acc_y_",
@@ -32,7 +33,7 @@ idbaccy <- c("body_acc_y_", "body_acc_y_","body_acc_y_", "body_acc_y_", "body_ac
              "body_acc_y_", "body_acc_y_","body_acc_y_", "body_acc_y_", "body_acc_y_", "body_acc_y_","body_acc_y_", "body_acc_y_",
              "body_acc_y_", "body_acc_y_","body_acc_y_", "body_acc_y_", "body_acc_y_", "body_acc_y_","body_acc_y_", "body_acc_y_")
 
-idbaccz <- c("body_acc_z_", "body_acc_z_","body_acc_z_", "body_acc_z_", "body_acc_z_", "body_acc_z_","body_acc_z_", "body_acc_z_",
+idbodyaccz <- c("body_acc_z_", "body_acc_z_","body_acc_z_", "body_acc_z_", "body_acc_z_", "body_acc_z_","body_acc_z_", "body_acc_z_",
              "body_acc_z_", "body_acc_z_","body_acc_z_", "body_acc_z_", "body_acc_z_", "body_acc_z_","body_acc_z_", "body_acc_z_",
              "body_acc_z_", "body_acc_z_","body_acc_z_", "body_acc_z_", "body_acc_z_", "body_acc_z_","body_acc_z_", "body_acc_z_",
              "body_acc_z_", "body_acc_z_","body_acc_z_", "body_acc_z_", "body_acc_z_", "body_acc_z_","body_acc_z_", "body_acc_z_",
@@ -49,7 +50,7 @@ idbaccz <- c("body_acc_z_", "body_acc_z_","body_acc_z_", "body_acc_z_", "body_ac
              "body_acc_z_", "body_acc_z_","body_acc_z_", "body_acc_z_", "body_acc_z_", "body_acc_z_","body_acc_z_", "body_acc_z_",
              "body_acc_z_", "body_acc_z_","body_acc_z_", "body_acc_z_", "body_acc_z_", "body_acc_z_","body_acc_z_", "body_acc_z_")
 
-idbgyrox <- c("body_gyro_x_", "body_gyro_x_","body_gyro_x_", "body_gyro_x_", "body_gyro_x_", "body_gyro_x_","body_gyro_x_", "body_gyro_x_",
+idbodygyrox <- c("body_gyro_x_", "body_gyro_x_","body_gyro_x_", "body_gyro_x_", "body_gyro_x_", "body_gyro_x_","body_gyro_x_", "body_gyro_x_",
               "body_gyro_x_", "body_gyro_x_","body_gyro_x_", "body_gyro_x_", "body_gyro_x_", "body_gyro_x_","body_gyro_x_", "body_gyro_x_",
               "body_gyro_x_", "body_gyro_x_","body_gyro_x_", "body_gyro_x_", "body_gyro_x_", "body_gyro_x_","body_gyro_x_", "body_gyro_x_",
               "body_gyro_x_", "body_gyro_x_","body_gyro_x_", "body_gyro_x_", "body_gyro_x_", "body_gyro_x_","body_gyro_x_", "body_gyro_x_",
@@ -66,7 +67,7 @@ idbgyrox <- c("body_gyro_x_", "body_gyro_x_","body_gyro_x_", "body_gyro_x_", "bo
               "body_gyro_x_", "body_gyro_x_","body_gyro_x_", "body_gyro_x_", "body_gyro_x_", "body_gyro_x_","body_gyro_x_", "body_gyro_x_",
               "body_gyro_x_", "body_gyro_x_","body_gyro_x_", "body_gyro_x_", "body_gyro_x_", "body_gyro_x_","body_gyro_x_", "body_gyro_x_")
 
-idbgyroy <- c("body_gyro_y_", "body_gyro_y_","body_gyro_y_", "body_gyro_y_", "body_gyro_y_", "body_gyro_y_","body_gyro_y_", "body_gyro_y_",
+idbodygyroy <- c("body_gyro_y_", "body_gyro_y_","body_gyro_y_", "body_gyro_y_", "body_gyro_y_", "body_gyro_y_","body_gyro_y_", "body_gyro_y_",
               "body_gyro_y_", "body_gyro_y_","body_gyro_y_", "body_gyro_y_", "body_gyro_y_", "body_gyro_y_","body_gyro_y_", "body_gyro_y_",
               "body_gyro_y_", "body_gyro_y_","body_gyro_y_", "body_gyro_y_", "body_gyro_y_", "body_gyro_y_","body_gyro_y_", "body_gyro_y_",
               "body_gyro_y_", "body_gyro_y_","body_gyro_y_", "body_gyro_y_", "body_gyro_y_", "body_gyro_y_","body_gyro_y_", "body_gyro_y_",
@@ -83,7 +84,7 @@ idbgyroy <- c("body_gyro_y_", "body_gyro_y_","body_gyro_y_", "body_gyro_y_", "bo
               "body_gyro_y_", "body_gyro_y_","body_gyro_y_", "body_gyro_y_", "body_gyro_y_", "body_gyro_y_","body_gyro_y_", "body_gyro_y_",
               "body_gyro_y_", "body_gyro_y_","body_gyro_y_", "body_gyro_y_", "body_gyro_y_", "body_gyro_y_","body_gyro_y_", "body_gyro_y_")
 
-idbgyroz <- c("body_gyro_z_", "body_gyro_z_","body_gyro_z_", "body_gyro_z_", "body_gyro_z_", "body_gyro_z_","body_gyro_z_", "body_gyro_z_",
+idbodygyroz <- c("body_gyro_z_", "body_gyro_z_","body_gyro_z_", "body_gyro_z_", "body_gyro_z_", "body_gyro_z_","body_gyro_z_", "body_gyro_z_",
               "body_gyro_z_", "body_gyro_z_","body_gyro_z_", "body_gyro_z_", "body_gyro_z_", "body_gyro_z_","body_gyro_z_", "body_gyro_z_",
               "body_gyro_z_", "body_gyro_z_","body_gyro_z_", "body_gyro_z_", "body_gyro_z_", "body_gyro_z_","body_gyro_z_", "body_gyro_z_",
               "body_gyro_z_", "body_gyro_z_","body_gyro_z_", "body_gyro_z_", "body_gyro_z_", "body_gyro_z_","body_gyro_z_", "body_gyro_z_",
@@ -100,7 +101,7 @@ idbgyroz <- c("body_gyro_z_", "body_gyro_z_","body_gyro_z_", "body_gyro_z_", "bo
               "body_gyro_z_", "body_gyro_z_","body_gyro_z_", "body_gyro_z_", "body_gyro_z_", "body_gyro_z_","body_gyro_z_", "body_gyro_z_",
               "body_gyro_z_", "body_gyro_z_","body_gyro_z_", "body_gyro_z_", "body_gyro_z_", "body_gyro_z_","body_gyro_z_", "body_gyro_z_")
 
-idtaccx <- c("total_acc_x_", "total_acc_x_","total_acc_x_", "total_acc_x_", "total_acc_x_", "total_acc_x_","total_acc_x_", "total_acc_x_",
+idtotalaccx <- c("total_acc_x_", "total_acc_x_","total_acc_x_", "total_acc_x_", "total_acc_x_", "total_acc_x_","total_acc_x_", "total_acc_x_",
              "total_acc_x_", "total_acc_x_","total_acc_x_", "total_acc_x_", "total_acc_x_", "total_acc_x_","total_acc_x_", "total_acc_x_",
              "total_acc_x_", "total_acc_x_","total_acc_x_", "total_acc_x_", "total_acc_x_", "total_acc_x_","total_acc_x_", "total_acc_x_",
              "total_acc_x_", "total_acc_x_","total_acc_x_", "total_acc_x_", "total_acc_x_", "total_acc_x_","total_acc_x_", "total_acc_x_",
@@ -117,7 +118,7 @@ idtaccx <- c("total_acc_x_", "total_acc_x_","total_acc_x_", "total_acc_x_", "tot
              "total_acc_x_", "total_acc_x_","total_acc_x_", "total_acc_x_", "total_acc_x_", "total_acc_x_","total_acc_x_", "total_acc_x_",
              "total_acc_x_", "total_acc_x_","total_acc_x_", "total_acc_x_", "total_acc_x_", "total_acc_x_","total_acc_x_", "total_acc_x_")
 
-idtaccy <- c("total_acc_y_", "total_acc_y_","total_acc_y_", "total_acc_y_", "total_acc_y_", "total_acc_y_","total_acc_y_", "total_acc_y_",
+idtotalaccy <- c("total_acc_y_", "total_acc_y_","total_acc_y_", "total_acc_y_", "total_acc_y_", "total_acc_y_","total_acc_y_", "total_acc_y_",
              "total_acc_y_", "total_acc_y_","total_acc_y_", "total_acc_y_", "total_acc_y_", "total_acc_y_","total_acc_y_", "total_acc_y_",
              "total_acc_y_", "total_acc_y_","total_acc_y_", "total_acc_y_", "total_acc_y_", "total_acc_y_","total_acc_y_", "total_acc_y_",
              "total_acc_y_", "total_acc_y_","total_acc_y_", "total_acc_y_", "total_acc_y_", "total_acc_y_","total_acc_y_", "total_acc_y_",
@@ -134,7 +135,7 @@ idtaccy <- c("total_acc_y_", "total_acc_y_","total_acc_y_", "total_acc_y_", "tot
              "total_acc_y_", "total_acc_y_","total_acc_y_", "total_acc_y_", "total_acc_y_", "total_acc_y_","total_acc_y_", "total_acc_y_",
              "total_acc_y_", "total_acc_y_","total_acc_y_", "total_acc_y_", "total_acc_y_", "total_acc_y_","total_acc_y_", "total_acc_y_")
 
-idtaccz <- c("total_acc_z_", "total_acc_z_","total_acc_z_", "total_acc_z_", "total_acc_z_", "total_acc_z_","total_acc_z_", "total_acc_z_",
+idtotalaccz <- c("total_acc_z_", "total_acc_z_","total_acc_z_", "total_acc_z_", "total_acc_z_", "total_acc_z_","total_acc_z_", "total_acc_z_",
              "total_acc_z_", "total_acc_z_","total_acc_z_", "total_acc_z_", "total_acc_z_", "total_acc_z_","total_acc_z_", "total_acc_z_",
              "total_acc_z_", "total_acc_z_","total_acc_z_", "total_acc_z_", "total_acc_z_", "total_acc_z_","total_acc_z_", "total_acc_z_",
              "total_acc_z_", "total_acc_z_","total_acc_z_", "total_acc_z_", "total_acc_z_", "total_acc_z_","total_acc_z_", "total_acc_z_",
@@ -155,17 +156,16 @@ idtaccz <- c("total_acc_z_", "total_acc_z_","total_acc_z_", "total_acc_z_", "tot
 
 num <- as.character(seq(1,128))
 
-idbaccx_num <- paste(idbaccx, num, sep="")
-idbaccy_num <- paste(idbaccy, num, sep="")
-idbaccz_num <- paste(idbaccz, num, sep="")
+idbodyaccx_num <- paste(idbodyaccx, num, sep="")
+idbodyaccy_num <- paste(idbodyaccy, num, sep="")
+idbodyaccz_num <- paste(idbodyaccz, num, sep="")
 
-idbgyrox_num <- paste(idbgyrox, num, sep="")
-idbgyroy_num <- paste(idbgyroy, num, sep="")
-idbgyroz_num <- paste(idbgyroz, num, sep="")
+idbodygyrox_num <- paste(idbodygyrox, num, sep="")
+idbodygyroy_num <- paste(idbodygyroy, num, sep="")
+idbodygyroz_num <- paste(idbodygyroz, num, sep="")
 
-idtaccx_num <- paste(idtaccx, num, sep="")
-idtaccy_num <- paste(idtaccy, num, sep="")
-idtaccz_num <- paste(idtaccz, num, sep="")
+idtotalaccx_num <- paste(idtotalaccx, num, sep="")
+idtotalaccy_num <- paste(idtotalaccy, num, sep="")
+idtotalaccz_num <- paste(idtotalaccz, num, sep="")
 
-measurement_id <- rbind(idbaccx_num, idbaccy_num, idbaccz_num, idbgyrox_num, idbgyroy_num, idbgyroz_num, idtaccx_num, idtaccy_num, idtaccz_num)
-
+measurement_id <- rbind(idbodyaccx_num, idbodyaccy_num, idbodyaccz_num, idbodygyrox_num, idbodygyroy_num, idbodygyroz_num, idtotalaccx_num, idtotalaccy_num, idtotalaccz_num)
