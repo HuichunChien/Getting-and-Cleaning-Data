@@ -98,6 +98,7 @@ totdata <- rbind.data.frame(train,test)
 
 features_names <- as.character(features[,2])
 
+source("./measurement_id.R")
 names(totdata) <- c("subject_id", "activity_id", features_names, measurement_id ) # measurement_id is created separately in measurement_id.R.
 
 ##################################################################################################
@@ -191,26 +192,26 @@ names(Means_Stds_tidy) <- c("subject_id", "activity_id", mean_names, std_names )
 
 
 ####################################################################################################
-
 # Part5. From the data set in step 4, creates a second, independent tidy data set with the average of each variable for each activity and each subject.
 
 install.packages("plyr")
 library(plyr)
-totdata_2ndtidydata <- totdata[ , 1:2]
 
-subject_activity_id <- paste(as.character(totdata$subject_id), as.character(totdata$activity_id), sep="_")
-totdata_2ndtidydata$subject_activity_id <- subject_activity_id
+tidydata <- Means_Stds_tidy[ , 1:2]
 
-totdata_2ndtidydata <- cbind.data.frame(totdata_2ndtidydata, totdata[ , 3:1715])
+subject_activity_id <- paste(as.character(Means_Stds_tidy$subject_id), as.character(Means_Stds_tidy$activity_id), sep="_")
+tidydata$subject_activity_id <- subject_activity_id
 
-features_ave_names <- gsub(".$", "_ave", features_names)
-measurement_ave_names <- gsub(".$", "_ave", measurement_id)
+tidydata <- cbind.data.frame(tidydata, Means_Stds_tidy[ , 3:ncol(Means_Stds_tidy)])
 
 # rename measurement names for 2nd tidy dataset
-names(totdata_2ndtidydata) <- c("subject_id", "activity_id", "subject_activity_id", features_ave_names, measurement_ave_names) 
-
+names(tidydata) <- c("subject_id", "activity_id", "subject_activity_id", mean_names, std_names) 
 
 install.packages("reshape2")
 library(reshape2)
 
-dataMelt <- melt(totdata_2ndtidydata, id= c("subject_id", "activity_id", "subject_activity_id"), measure.vars=c(features_ave_names, measurement_ave_names) )
+dataMelt <- melt(tidydata, id= c("subject_id", "activity_id", "subject_activity_id"), measure.vars=c(mean_names, std_names) )
+second_tidydata <- dcast(dataMelt, subject_activity_id ~ variable, mean)
+
+# write the tidy data set to a file
+write.table(second_tidydata, "second_tidydata.txt", row.names=FALSE)
