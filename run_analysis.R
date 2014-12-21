@@ -211,7 +211,7 @@ install.packages("reshape2")
 library(reshape2)
 
 dataMelt <- melt(tidydata, id= c("subject_id", "activity_id", "subject_activity_id"), measure.vars=c(mean_names, std_names) )
-second_tidydata <- dcast(dataMelt, subject_activity_id ~ variable, mean)
+tidydata <- dcast(dataMelt, subject_activity_id ~ variable, mean)
 
 # write the tidy data set to a file
-write.table(second_tidydata, "second_tidydata.txt", row.names=FALSE)
+write.table(tidydata, "tidydata.txt", row.names=FALSE)
