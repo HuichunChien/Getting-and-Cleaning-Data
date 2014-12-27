@@ -1,0 +1,33 @@
+# Quiz 4 in getting and cleaning
+
+# question 1
+
+url <- "http://d396qusza40orc.cloudfront.net/getdata%2Fdata%2Fss06hid.csv "
+download.file(url, "/Users/Huichun/Documents/Hui-Chun/Personal/Online courses/Cleaning data/sshid.csv", method= "curl")
+data <- read.csv("sshid.csv")
+#wgtpnames <- grep("wgtp", names(data), value=TRUE)
+splitnames <- strsplit(names(data), "wgtp")
+splitnames[[123]]
+
+# question 2
+
+url2 <- "https://d396qusza40orc.cloudfront.net/getdata%2Fdata%2FGDP.csv "
+download.file(url2, "./GDP.csv", method="curl")
+data <- read.csv("GDP.csv")
+data <- data[5:236, c(1,2,4,5)]
+names(data)<-c("CountryCode", "Ranking", "CountryNames", "GDP")
+# remove "," from GDP
+data$GDP <- gsub(",", "", data$GDP)
+GDP <- (data$GDP)
+
+#GDP <- gsub("", "", data$GDP)
+#GDP <- GDP[!is.na(GDP)] does not work
+# mean(data$GDP, na.rm= TRUE) does not work on moving "" elements
+
+GDP <- sub("..","", GDP) # reduce 231 elements to 190 elements
+GDP <- as.numeric(GDP)
+
+
+# question 3
+grep("^United",data$CountryNames)
+# [1]  1  6 32
