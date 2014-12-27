@@ -33,6 +33,8 @@ grep("^United",data$CountryNames)
 # [1]  1  6 32
 
 
+# question 4
+
 urlEDSTATS <- "https://d396qusza40orc.cloudfront.net/getdata%2Fdata%2FEDSTATS_Country.csv"
 download.file(urlEDSTATS, "./EDSTATS.csv", method="curl")
 dataEDSTATS <- read.csv("EDSTATS.csv")
@@ -42,3 +44,19 @@ dataMerge <- merge(data, dataEDSTATS, by="CountryCode")
 # informaiton of fisical year is labeled in column named Special.Notes
 dataSpecial.Notes <- dataMerge$Special.Notes
 sum(grepl("June", dataSpecial.Notes))
+
+# question 5
+library(quantmod)
+amzn = getSymbols("AMZN",auto.assign=FALSE)
+sampleTimes = index(amzn) 
+
+data2012l <-grepl("2012",sampleTimes)
+sum(grepl("2012",sampleTimes))
+# [1] 250
+
+# how many data were collected on Monday
+install.packages("lubridate")
+library(lubridate)
+table(wday(sampleTimes[data2012l]))
+#  2  3  4  5  6 
+# 47 50 51 51 51 
