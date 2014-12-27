@@ -31,3 +31,14 @@ GDP <- as.numeric(GDP)
 # question 3
 grep("^United",data$CountryNames)
 # [1]  1  6 32
+
+
+urlEDSTATS <- "https://d396qusza40orc.cloudfront.net/getdata%2Fdata%2FEDSTATS_Country.csv"
+download.file(urlEDSTATS, "./EDSTATS.csv", method="curl")
+dataEDSTATS <- read.csv("EDSTATS.csv")
+
+dataMerge <- merge(data, dataEDSTATS, by="CountryCode")
+
+# informaiton of fisical year is labeled in column named Special.Notes
+dataSpecial.Notes <- dataMerge$Special.Notes
+sum(grepl("June", dataSpecial.Notes))
